@@ -26,11 +26,63 @@ Claude Skills are instructions you load into a Claude Project. Once added, they 
 
 ## How to Use a Skill
 
-1. Open [Claude.ai](https://claude.ai) and create a new Project.
-2. Go to **Project Instructions** and paste the contents of the skill file.
-3. Upload your documents in the chat and ask Claude to compare them.
+Each skill folder contains its own README with detailed usage
+instructions and example prompts. Below are setup instructions
+for the AI assistants that support custom instructions.
 
-Each skill folder contains its own README with detailed usage instructions and example prompts.
+### Claude (claude.ai)
+
+1. Open [Claude.ai](https://claude.ai) and create a new Project,
+   or open an existing one.
+2. Click **Project Instructions**.
+3. Open the `skill.md` file in the skill folder, copy the full
+   contents, and paste them into the Project Instructions field.
+4. Save the instructions.
+5. Upload your documents in the chat and ask Claude to compare them.
+
+### ChatGPT (chat.openai.com)
+
+1. Open [ChatGPT](https://chat.openai.com) and go to
+   **My GPTs** in the left sidebar.
+2. Click **Create a GPT**.
+3. Go to the **Configure** tab.
+4. Copy the contents of the `skill.md` file and paste them into
+   the **Instructions** field.
+5. Save and open a conversation with your custom GPT.
+6. Upload your documents and ask it to compare them.
+
+### Gemini (gemini.google.com)
+
+1. Open [Gemini](https://gemini.google.com) and click **Gems**
+   in the left sidebar.
+2. Click **New Gem**.
+3. Copy the contents of the `skill.md` file and paste them into
+   the **Instructions** field.
+4. Save the Gem and open a conversation with it.
+5. Upload your documents and ask it to compare them.
+
+### OpenClaw (openclaw.ai)
+
+OpenClaw uses a skills system that lets you extend your assistant
+with custom behaviors. These skills are best suited for document
+workflows you run frequently.
+
+1. Install OpenClaw by following the
+   [getting started guide](https://docs.openclaw.ai/getting-started).
+2. Download the `skill.md` file from the skill folder in this repo.
+3. In your OpenClaw chat interface, ask your assistant to load the
+   skill file, or place it in your OpenClaw skills directory and
+   ask your assistant to activate it.
+4. Once active, share your two quote documents and ask your
+   assistant to compare them.
+
+For more detail on working with skills in OpenClaw, see the
+[OpenClaw skills documentation](https://docs.openclaw.ai/skills)
+or browse community skills on [ClawHub](https://clawhub.ai).
+
+> **Note:** These skills are written and tested primarily for
+> Claude. Results on other AI assistants may vary depending on
+> how each platform interprets custom instructions.
 
 ---
 
@@ -42,7 +94,32 @@ This repository is licensed under the [MIT License](./LICENSE). You are free to 
 
 ## Contributing
 
-We welcome contributions from the insurance and AI community. If you have a tool, prompt, or workflow that would be useful to others, open a pull request or start a discussion.
+We welcome contributions from the insurance and AI community.
+
+### Reporting an Issue or Suggesting an Improvement
+
+If you find a problem with an existing skill or have a suggestion
+for improving it:
+
+1. Go to the **Issues** tab at the top of this repository.
+2. Click **New Issue**.
+3. Describe the problem or suggestion clearly. Include the skill
+   name, what you expected, and what you saw instead.
+4. Submit the issue. We will review and respond.
+
+### Adding a New Skill
+
+If you have built a skill you would like to contribute:
+
+1. Fork this repository.
+2. Create a new folder under `skills/` named after your skill
+   (e.g. `skills/policy-review/`).
+3. Add a `skill.md` file with the skill content and a `README.md`
+   with usage instructions following the same format as the
+   existing skills.
+4. Open a Pull Request with a short description of what the skill
+   does and who it is designed for.
+5. We will review, test, and merge if it meets the quality bar.
 
 ---
 
