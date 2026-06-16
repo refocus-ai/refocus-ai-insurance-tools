@@ -48,4 +48,4 @@ We welcome contributions from the insurance and AI community. If you have a tool
 
 ## Contact
 
-Questions or feedback? Reach out at [support@refocus.ai](mailto:support@refocus.ai) or open an issue in this repository.
+Questions or feedback? Reach out at [support@refocusai.com](mailto:support@refocusai.com) or open an issue in this repository.
