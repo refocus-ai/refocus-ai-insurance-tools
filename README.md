@@ -21,6 +21,7 @@ These skills are structured instructions for AI assistants. Once added, they gui
 | Skill | Description |
 |---|---|
 | [Quote Comparison](./skills/quote-comparison/) | Compare two insurance quotes for the same insured side by side. Identifies premium differences, coverage gaps, rating discrepancies, and bind-readiness issues across any line of business. |
+| [Loss Run Trend Analysis](./skills/loss-run-analysis/) | Analyze one or more loss runs for a single company. Normalizes claim data, identifies trends, and produces risk-management recommendations, agent service proposals, and underwriter renewal narratives. |
 
 ---
 
