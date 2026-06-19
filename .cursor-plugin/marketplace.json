@@ -1,0 +1,18 @@
+{
+  "name": "refocus-ai-insurance-tools",
+  "owner": {
+    "name": "ReFocus AI",
+    "email": "support@refocusai.com"
+  },
+  "metadata": {
+    "description": "AI tools for insurance agencies, brokers, and carriers",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "quote-comparison",
+      "source": "./skills/quote-comparison",
+      "description": "Compare two insurance quotes for the same insured side by side"
+    }
+  ]
+}

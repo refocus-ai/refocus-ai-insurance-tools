@@ -16,7 +16,7 @@ ReFocus AI is an insurance technology platform that helps agencies and brokers r
 
 ### Skills
 
-Claude Skills are instructions you load into a Claude Project. Once added, they guide Claude to analyze insurance documents using a structured, professional framework.
+These skills are structured instructions for AI assistants. Once added, they guide the assistant to analyze insurance documents using a professional framework. Install them in Claude Projects, Cursor plugins, or other supported platforms below.
 
 | Skill | Description |
 |---|---|
@@ -30,13 +30,34 @@ Each skill folder contains its own README with detailed usage
 instructions and example prompts. Below are setup instructions
 for the AI assistants that support custom instructions.
 
+### Cursor (Desktop)
+
+The Cursor desktop app does not have a `/plugin` command. Install
+skills from the UI instead:
+
+1. Open **Cursor Settings** and go to **Customize**.
+2. Under **Personal plugins**, click **+**.
+3. Select **Create plugin and add marketplace**.
+4. Click **Add from repository**.
+5. Enter this repository URL:
+
+   `https://github.com/refocus-ai/refocus-ai-insurance-tools`
+
+6. Install the skills you want from the marketplace.
+7. Open Agent chat, upload your documents, and ask for a
+   comparison.
+
+Skills load automatically when relevant. You can also invoke a
+skill manually in chat with `/insurance-quote-compare`.
+
 ### Claude (claude.ai)
 
 1. Open [Claude.ai](https://claude.ai) and create a new Project,
    or open an existing one.
 2. Click **Project Instructions**.
-3. Open the `skill.md` file in the skill folder, copy the full
-   contents, and paste them into the Project Instructions field.
+3. Open the `SKILL.md` file in the skill folder (under
+   `skills/<skill-name>/`), copy the full contents, and paste them
+   into the Project Instructions field.
 4. Save the instructions.
 5. Upload your documents in the chat and ask Claude to compare them.
 
@@ -46,7 +67,7 @@ for the AI assistants that support custom instructions.
    **My GPTs** in the left sidebar.
 2. Click **Create a GPT**.
 3. Go to the **Configure** tab.
-4. Copy the contents of the `skill.md` file and paste them into
+4. Copy the contents of the `SKILL.md` file and paste them into
    the **Instructions** field.
 5. Save and open a conversation with your custom GPT.
 6. Upload your documents and ask it to compare them.
@@ -56,7 +77,7 @@ for the AI assistants that support custom instructions.
 1. Open [Gemini](https://gemini.google.com) and click **Gems**
    in the left sidebar.
 2. Click **New Gem**.
-3. Copy the contents of the `skill.md` file and paste them into
+3. Copy the contents of the `SKILL.md` file and paste them into
    the **Instructions** field.
 4. Save the Gem and open a conversation with it.
 5. Upload your documents and ask it to compare them.
@@ -69,7 +90,7 @@ workflows you run frequently.
 
 1. Install OpenClaw by following the
    [getting started guide](https://docs.openclaw.ai/getting-started).
-2. Download the `skill.md` file from the skill folder in this repo.
+2. Download the `SKILL.md` file from the skill folder in this repo.
 3. In your OpenClaw chat interface, ask your assistant to load the
    skill file, or place it in your OpenClaw skills directory and
    ask your assistant to activate it.
@@ -114,7 +135,7 @@ If you have built a skill you would like to contribute:
 1. Fork this repository.
 2. Create a new folder under `skills/` named after your skill
    (e.g. `skills/policy-review/`).
-3. Add a `skill.md` file with the skill content and a `README.md`
+3. Add a `SKILL.md` file with the skill content and a `README.md`
    with usage instructions following the same format as the
    existing skills.
 4. Open a Pull Request with a short description of what the skill

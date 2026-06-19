@@ -21,10 +21,32 @@ It works for any line of business: personal auto, homeowners, commercial propert
 
 ## How to Install
 
+### Cursor (Desktop)
+
+The Cursor desktop app does not have a `/plugin` command. Install
+this skill from the UI instead:
+
+1. Open **Cursor Settings** and go to **Customize**.
+2. Under **Personal plugins**, click **+**.
+3. Select **Create plugin and add marketplace**.
+4. Click **Add from repository**.
+5. Enter this repository URL:
+
+   `https://github.com/refocus-ai/refocus-ai-insurance-tools`
+
+6. Install the **Insurance Quote Comparison** skill from the
+   marketplace.
+
+The skill is now available in Agent chat. It loads automatically
+when you upload two quote documents, or you can invoke it with
+`/insurance-quote-compare`.
+
+### Claude (claude.ai)
+
 1. Open [Claude.ai](https://claude.ai) and sign in.
 2. Click **Projects** in the left sidebar and create a new Project, or open an existing one.
 3. Click **Project Instructions**.
-4. Open [`skill.md`](./skill.md) in this folder, copy the full contents, and paste them into the Project Instructions field.
+4. Open [`SKILL.md`](./skills/insurance-quote-compare/SKILL.md) in this folder, copy the full contents, and paste them into the Project Instructions field.
 5. Save the instructions.
 
 The skill is now active for every conversation in that Project.
@@ -80,7 +102,7 @@ If you are comparing two quotes that are not from IntelliAgent, you can tell Cla
 
 ## Requirements
 
-- A [Claude.ai](https://claude.ai) account (free or paid)
+- One of the supported platforms above (Cursor, Claude.ai, ChatGPT, Gemini, or OpenClaw)
 - Two insurance quote or proposal documents for the same insured
 - PDF format is recommended for best results
 
