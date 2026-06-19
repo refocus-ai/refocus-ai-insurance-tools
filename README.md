@@ -44,13 +44,13 @@ command. Install skills from the UI instead:
    `https://github.com/refocus-ai/refocus-ai-insurance-tools`
 
 6. Install the skills you want from the marketplace.
-7. Open chat, upload your documents, and ask for a comparison.
+7. Open chat, upload your documents, and follow the prompts in
+   that skill's README.
 
-Skills load automatically when relevant. You can also invoke them
-manually:
-
-- **Cursor:** `/insurance-quote-compare`
-- **Claude Desktop:** `/quote-comparison:insurance-quote-compare`
+Skills load automatically when relevant. To invoke one manually,
+see the skill's README for the correct command on your platform
+(for example, `/skill-name` in Cursor or
+`/plugin-name:skill-name` in Claude Desktop).
 
 ### Claude (claude.ai)
 
@@ -58,10 +58,11 @@ manually:
    or open an existing one.
 2. Click **Project Instructions**.
 3. Open the `SKILL.md` file in the skill folder (under
-   `skills/<skill-name>/`), copy the full contents, and paste them
-   into the Project Instructions field.
+   `skills/<skill-name>/skills/<skill-id>/`), copy the full
+   contents, and paste them into the Project Instructions field.
 4. Save the instructions.
-5. Upload your documents in the chat and ask Claude to compare them.
+5. Upload your documents in the chat and use the example prompts
+   from that skill's README.
 
 ### ChatGPT (chat.openai.com)
 
@@ -69,20 +70,22 @@ manually:
    **My GPTs** in the left sidebar.
 2. Click **Create a GPT**.
 3. Go to the **Configure** tab.
-4. Copy the contents of the `SKILL.md` file and paste them into
-   the **Instructions** field.
+4. Copy the contents of the `SKILL.md` file from the skill folder
+   and paste them into the **Instructions** field.
 5. Save and open a conversation with your custom GPT.
-6. Upload your documents and ask it to compare them.
+6. Upload your documents and use the example prompts from that
+   skill's README.
 
 ### Gemini (gemini.google.com)
 
 1. Open [Gemini](https://gemini.google.com) and click **Gems**
    in the left sidebar.
 2. Click **New Gem**.
-3. Copy the contents of the `SKILL.md` file and paste them into
-   the **Instructions** field.
+3. Copy the contents of the `SKILL.md` file from the skill folder
+   and paste them into the **Instructions** field.
 4. Save the Gem and open a conversation with it.
-5. Upload your documents and ask it to compare them.
+5. Upload your documents and use the example prompts from that
+   skill's README.
 
 ### OpenClaw (openclaw.ai)
 
@@ -96,8 +99,8 @@ workflows you run frequently.
 3. In your OpenClaw chat interface, ask your assistant to load the
    skill file, or place it in your OpenClaw skills directory and
    ask your assistant to activate it.
-4. Once active, share your two quote documents and ask your
-   assistant to compare them.
+4. Once active, upload your documents and use the example prompts
+   from that skill's README.
 
 For more detail on working with skills in OpenClaw, see the
 [OpenClaw skills documentation](https://docs.openclaw.ai/skills)
