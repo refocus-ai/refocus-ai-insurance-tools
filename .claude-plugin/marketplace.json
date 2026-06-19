@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "refocus-ai-insurance-tools",
+  "version": "1.0.0",
+  "description": "AI tools for insurance agencies, brokers, and carriers",
+  "owner": {
+    "name": "ReFocus AI",
+    "email": "support@refocusai.com"
+  },
+  "plugins": [
+    {
+      "name": "quote-comparison",
+      "source": "./skills/quote-comparison",
+      "description": "Compare two insurance quotes for the same insured side by side",
+      "version": "1.0.0",
+      "author": {
+        "name": "ReFocus AI",
+        "email": "support@refocusai.com"
+      },
+      "category": "productivity",
+      "keywords": ["insurance", "quotes", "comparison", "underwriting"]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ ReFocus AI is an insurance technology platform that helps agencies and brokers r
 
 ### Skills
 
-These skills are structured instructions for AI assistants. Once added, they guide the assistant to analyze insurance documents using a professional framework. Install them in Claude Projects, Cursor plugins, or other supported platforms below.
+These skills are structured instructions for AI assistants. Once added, they guide the assistant to analyze insurance documents using a professional framework. Install them from the Cursor or Claude desktop apps, Claude Projects, or other supported platforms below.
 
 | Skill | Description |
 |---|---|
@@ -30,12 +30,12 @@ Each skill folder contains its own README with detailed usage
 instructions and example prompts. Below are setup instructions
 for the AI assistants that support custom instructions.
 
-### Cursor (Desktop)
+### Cursor & Claude (Desktop)
 
-The Cursor desktop app does not have a `/plugin` command. Install
-skills from the UI instead:
+The Cursor and Claude desktop apps do not have a `/plugin`
+command. Install skills from the UI instead:
 
-1. Open **Cursor Settings** and go to **Customize**.
+1. Open **Settings** and go to **Customize**.
 2. Under **Personal plugins**, click **+**.
 3. Select **Create plugin and add marketplace**.
 4. Click **Add from repository**.
@@ -44,11 +44,13 @@ skills from the UI instead:
    `https://github.com/refocus-ai/refocus-ai-insurance-tools`
 
 6. Install the skills you want from the marketplace.
-7. Open Agent chat, upload your documents, and ask for a
-   comparison.
+7. Open chat, upload your documents, and ask for a comparison.
 
-Skills load automatically when relevant. You can also invoke a
-skill manually in chat with `/insurance-quote-compare`.
+Skills load automatically when relevant. You can also invoke them
+manually:
+
+- **Cursor:** `/insurance-quote-compare`
+- **Claude Desktop:** `/quote-comparison:insurance-quote-compare`
 
 ### Claude (claude.ai)
 
@@ -138,9 +140,13 @@ If you have built a skill you would like to contribute:
 3. Add a `SKILL.md` file with the skill content and a `README.md`
    with usage instructions following the same format as the
    existing skills.
-4. Open a Pull Request with a short description of what the skill
+4. Add `.cursor-plugin/plugin.json` and `.claude-plugin/plugin.json`
+   manifests in the skill folder, and register the plugin in both
+   `.cursor-plugin/marketplace.json` and `.claude-plugin/marketplace.json`
+   at the repository root.
+5. Open a Pull Request with a short description of what the skill
    does and who it is designed for.
-5. We will review, test, and merge if it meets the quality bar.
+6. We will review, test, and merge if it meets the quality bar.
 
 ---
 
