@@ -1,0 +1,12 @@
+{
+  "name": "quote-comparison",
+  "displayName": "Insurance Quote Comparison",
+  "version": "1.0.0",
+  "description": "Compare two insurance quotes for the same insured side by side. Identifies premium differences, coverage gaps, rating discrepancies, and bind-readiness issues.",
+  "author": {
+    "name": "ReFocus AI",
+    "email": "support@refocusai.com"
+  },
+  "license": "MIT",
+  "keywords": ["insurance", "quotes", "comparison", "underwriting"]
+}
